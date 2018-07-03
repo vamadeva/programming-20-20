@@ -5,3 +5,30 @@ def get_input():
     return my_list
 x=get_input()
 print(x)
+
+
+def get_input():
+    vertex = input("enter first point,") + input("enter the second point")
+    vertex = int(vertex)
+    my_list = []
+    my_list.append (vertex)
+    return my_list
+x=get_input()
+print(x)
+
+
+def get_input():
+    vertex = float(input("enter first point: ")) , float(input("enter the second point: "))
+    print(vertex)
+x=get_input()
+print(x)
+
+
+def get_input():
+    vertex = []
+    vertex.append(float(input("enter first point: ")))
+    vertex.append(float(input("enter the second point: ")))
+    return vertex
+     
+x=get_input()
+print(x)
