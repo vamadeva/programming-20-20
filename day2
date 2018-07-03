@@ -1,0 +1,7 @@
+def get_input():
+    vertex = input("enter first point") + input("enter the second point")
+    my_list = []
+    my_list.append (vertex)
+    return my_list
+x=get_input()
+print(x)
