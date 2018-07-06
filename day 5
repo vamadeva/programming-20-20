@@ -2,3 +2,23 @@ def getstring():
     y = input("enter the element :")
     return y
 print(getstring())
+
+def getstring():
+    mystr = input("enter the string :")
+    return mystr
+
+
+def generatestring(s):
+    x = 0
+    y = 3
+    z = -1
+    for j in s:
+        for i in s[0:z-1]:
+            print(s[x:x+y])
+            x=x+1
+        y = y+1
+        z = z-1
+        x = 0
+            
+s = getstring()
+generatestring(s)
