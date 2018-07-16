@@ -1,0 +1,19 @@
+def takeinput():
+    r1 = float(input("radius of first circle :"))
+    x1 = float(input("x coordinate of first circle :"))
+    y1 = float(input("y coordinate of first circle :"))
+    r2 = float(input("radius of second circle :"))
+    x2 = float(input("x coordinate of second circle :"))
+    y2 = float(input("y coordinate of second circle :"))
+    
+    return r1,x1,y1,r2,x2,y2
+def compute(t):
+    r1,x1,y1,r2,x2,y2=t
+    import math
+    if (r1 - r2)**2 < (x1 - x2)**2 + (y1 - y2)**2 < (r1 + r2)**2:
+        print("circles intersect")
+    else:
+        print("circles do not intersect")
+        
+t = takeinput()
+c = compute(t)
