@@ -1,0 +1,16 @@
+def dfa():
+    m = int(input("enter the number states :"))
+    k = int(input("enter the number of accepting states :"))
+    accepting = []
+    for i in range(k):
+        x = int(input("enter the accepting states"))
+        accepting.append(x)
+    
+    moves = []
+    for i in range(m):
+        a = int(input("enter the move"))
+        b = int(input("enter the move"))
+        moves.append(a)
+        moves.append(b)
+    return m,k,accepting,moves
+print(dfa())
